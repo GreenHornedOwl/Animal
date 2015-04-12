@@ -1,0 +1,20 @@
+.footer
+	border-top: 1px solid #000
+	padding-top: 0.5em
+	margin-top: 1em
+	.footer-upper
+		+make-row
+		+clearfix
+		ul.footer-nav
+			+make-sm-column(8)
+			+justify-nav
+			li 
+				text-align: center
+		.footer-social
+			+make-sm-column(4)	
+			ul 
+				max-width: 150px
+				margin: 0 auto
+				+justify-nav
+	.footer-lower
+		text-align: center

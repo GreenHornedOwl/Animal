@@ -1,0 +1,54 @@
+.container
+	+container-fixed
+	@media (min-width: $screen-sm-min)
+		width: $container-sm
+	@media (min-width: $screen-md-min)
+		width: $container-md
+	@media (min-width: $screen-lg-min)
+		width: $container-lg
+.row
+	+make-row()		
+.wrapper 
+	// background-color: #fff
+	background-color: rgba(255,255,255,0.95)
+.block-header
+	font-weight: 300
+	font-size: 1.4em
+	border-bottom: 1px solid #eee
+	margin-bottom: 0.5em
+	line-height: 1.6em
+	// text-transform: uppercase
+
+.aside
+	+make-sm-column(4)
+	+make-md-column(2)
+.breadcrumbs
+	+make-sm-column(12)		
+	ul
+		+h-nav
+		a
+			color: #000
+			line-height: 2.2em
+			text-transform: uppercase
+			&:hover
+				color: $blue
+		li 		
+			font-weight: 400
+			&:after
+				content: "/"
+				margin-left: 5px
+				margin-right: 5px
+				font-weight: 700
+				// color: $blue
+			&:last-child:after
+				content: ""	
+				// color: $red
+.content-left
+	+make-sm-column(4)
+.content-right
+	+make-sm-column(8)
+.read-more
+	text-decoration: underline
+	margin-bottom: 0.5em
+.learn-more
+	@extend .read-more		

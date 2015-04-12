@@ -1,0 +1,59 @@
+.main-nav	
+	// border-bottom: 2px solid $blue
+	position: relative
+	z-index: 2	
+	border: 1px solid #000	
+	ul
+		+justify-nav
+		position: relative
+		li
+			text-align: center
+	a
+		+nav-level-1(#fff,#000,#fff,#000)
+		font-weight: 400		
+		font-size: 1em
+		padding: 0.2em 0em
+		display: block
+		// &.active 
+		// 	color: #000
+	.dropdown		
+		a:after
+			font-family: "FontAwesome"
+			content: "\f107"
+			font-size: 0.8em
+			margin-left: 0.5em	
+	.dropdown:hover
+		.dropdown-menu
+			display: inline-block		
+	.dropdown-menu
+		display: none
+		+v-nav
+		+clearfix
+		+background-image(linear-gradient(white, #fafafa))
+		border-bottom: 2px solid $accent
+		min-height: 300px
+		position: absolute
+		top: 28px
+		left: 0
+		.level-2			
+			a
+				+nav-level-2(transparent, $accent, transparent, $accent)
+				text-transform: uppercase
+				font-weight: 700
+				font-size: 0.9em
+				padding-left: 0.8em
+				&:after
+					display: none
+		.level-3
+			a
+				+nav-level-2(transparent, #000, transparent, $accent)
+				font-size: 0.8em
+				text-transform: none
+				font-weight: 400			
+				padding-left: 1em
+		.level-2-container
+			padding: 1em $grid-gutter-width/2
+			float: left		
+	.teaser
+		float: left
+								

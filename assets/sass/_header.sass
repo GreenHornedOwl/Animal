@@ -1,0 +1,42 @@
+.header
+	+clearfix
+	margin-bottom: 1em
+	.logo
+		+make-md-column(3)
+		padding-left: 0
+	.upper	
+		+clearfix		
+		font-size: 0.8em
+		margin-bottom: 1em
+		border-bottom: 1px solid $light-gray
+		text-align: right
+		a
+			padding: 0px 0.5em
+			margin: 0.5em 0
+			color: #000
+			&:hover
+				color: $accent		
+		ul
+			+h-nav
+			float: right
+			display: inline-block
+			li:last-child
+				a
+					padding-left: 0
+		.search-home
+			float: right
+			display: inline-block			
+			form 
+				+default-input
+			input
+				+default-input
+				border-top: none
+				border-left: none
+				border-right: none
+				margin-top: 0.5em
+			button
+				outline: none
+				background-color: #fff
+				border: none
+				color: $accent
+				font-size: 1.2em

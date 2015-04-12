@@ -1,0 +1,81 @@
+.contact-and-customize
+	text-align: center
+	background-color: #eee
+	padding: 1.5em
+	margin-bottom: $spacing
+	a 
+		background-color: #aaa
+		padding: 0.5em
+		color: #fff
+.explore
+	+make-row
+	.explore-option
+		+make-xs-column(6)
+	.explore-headline
+		+make-xs-column(12)
+		font-size: 1.2em
+		font-weight: 700	
+	a 		
+		border: 1px solid #000
+		padding: 0.5em
+		display: block
+		img
+			max-width: 40px
+			float: left
+		span 
+			line-height: 40px
+			padding-left: 20px	
+
+// Product Tabs
+.product-tab-header
+	+make-sm-column(12)
+	margin-top: $spacing*2
+	ul
+		+h-nav
+		border-bottom: 1px solid #000
+		a
+			color: #000
+			font-size: 0.8em
+			line-height: 2em
+			display: inline-block
+			font-weight: 700
+			text-transform: uppercase
+			&:after
+				content: "|"
+				margin-left: 5px
+				margin-right: 5px
+				font-weight: 400
+			&:hover
+				color: $red
+		li.active
+			a				
+				color: $red	
+.tab-content
+	padding-top: $spacing	
+	+make-sm-column(12)
+	+clearfix	
+	.product-description
+		padding-top: 4em
+		max-width: 75%
+		margin: 0 auto
+		font-size: 0.8em
+		h3
+			font-size: 1.8em
+			font-weight: 300
+		.inline-element
+			margin: 2em
+			margin-top: 1em
+			&:nth-of-type(2n+1)
+				margin-left: -4em
+				float: left
+			&:nth-of-type(2n+2)
+				margin-right: -4em
+				float: right
+
+.tab-content
+	.tab-pane 
+		display: none
+		visibility: hidden
+	.active 
+		display: block
+		visibility: visible

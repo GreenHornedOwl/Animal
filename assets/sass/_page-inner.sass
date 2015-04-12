@@ -1,0 +1,90 @@
+.main-content-upper
+	margin-bottom: 2em
+	h1
+		margin-bottom: 0.2em
+	.description
+		display: none	
+	.logos
+		+clearfix
+		img
+			max-width: 100px
+			float: left
+			margin-right: 0.5em	
+.solutions-4column
+	font-size: 1.2em
+	margin-bottom: 2em
+	p
+		text-align: center		
+		font-weight: 700
+	.list 
+		border: 1px solid #000
+		padding: $spacing 0
+		+clearfix
+		.list-item
+			+make-sm-column(3)
+			+make-xs-column(6)
+			margin-bottom: 1em
+			a 
+				text-align: center
+				font-weight: 700
+.column-3-cell
+	+make-sm-column(4)
+	+make-xs-column(12)
+	margin-bottom: 1em
+	h2
+		text-align: center
+		font-size: 1em
+		border: 1px solid #000
+		padding: 0.2em
+	h3
+		font-size: 1em	
+	.media-left
+		width: 30%
+	.media-body
+		p 
+			height: 3.3em
+			overflow: hidden				
+.call-us
+	text-align: center
+	font-size: 1.5em
+.full-width-cell
+	margin-bottom: 1em
+	+make-xs-column(12)
+	h1
+		font-size: 1.5em
+		margin-bottom: 0.2em
+	h2
+		font-size: 1em
+		font-weight: 700		
+	.media-right
+		width: 40%
+		img 
+			margin-bottom: $spacing
+.big-carousel-image
+	margin-bottom: $spacing			
+.content-with-sidebar
+	+make-sm-column(10)
+	h2
+		margin-bottom: $spacing
+	.full-cell
+		margin-bottom: $spacing
+		border: 1px solid #000
+		padding: 0.5em
+		.media-left
+			width: 20%
+.content-sidebar
+	+make-sm-column(2)
+	padding: 0px
+.aside-cell
+	+make-sm-column(12)
+	+make-xs-column(6)
+	margin-bottom: $spacing*2
+	img 
+		margin-bottom: $spacing
+	.aside-title
+		min-height: 2em
+		font-weight: 800
+		text-align: center
+	.aside-subheading
+		font-size: 1em
+		font-weight: 600

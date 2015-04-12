@@ -1,0 +1,64 @@
+extend jade.resources/layout/master
+block content
+	.container
+		.row
+			.content-left.home-nav
+				p Select  your project application
+				ul
+					li
+						a.active(href='commercial-av.html') Commercial AV          
+					li
+						a(href='#') Menu 
+					li
+						a(href='#') Menu        
+					li
+						a(href='#') Menu        
+					li
+						a(href='#') Menu
+					li
+						a(href='#') Menu          
+					li
+						a(href='#') Menu 
+					li
+						a(href='#') Menu        
+					li
+						a(href='#') Menu 
+			.content-right.home-slider
+				.owl-carousel
+					.item
+						img(src='http://placehold.it/877x344' class='img-responsive')
+					.item
+						img(src='http://placehold.it/877x344' class='img-responsive')
+					.item
+						img(src='http://placehold.it/877x344' class='img-responsive')
+					.item
+						img(src='http://placehold.it/877x344' class='img-responsive')
+					.item
+						img(src='http://placehold.it/877x344' class='img-responsive')
+	.container				
+		.main-featured
+			.content-left
+				+contentBox('banner', '300x250')
+			.content-right
+				+contentBox('content', 'Welcome to this nice headline')
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet fermentum diam, sed euismod justo. Nam tincidunt dictum urna, sed vehicula ex eleifend bibendum. In viverra ex non eros blandit, at facilisis dolor laoreet.
+					h4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet fermentum diam, sed euismod justo. Nam tincidunt dictum urna, sed vehicula ex eleifend bibendum. In viverra ex non eros blandit, at facilisis dolor laoreet.
+					h4 Morbi sit amet fermentum diam, sed euismod justo.
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet fermentum diam, sed euismod justo. Nam tincidunt dictum urna, sed vehicula ex eleifend bibendum. In viverra ex non eros blandit, at facilisis dolor laoreet.
+	.container
+		.row
+			.featured-half
+				.media
+					.media-left
+						+contentBox('banner', '300x250')
+					.media-right
+						+contentBox('content', 'Welcome to this nice headline')
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet fermentum diam, sed euismod justo. Nam tincidunt dictum urna, sed vehicula ex eleifend bibendum. In viverra ex non eros blandit, at facilisis dolor laoreet.
+			.featured-half
+				.media
+					.media-left
+						+contentBox('banner', '300x250')
+					.media-right
+						+contentBox('content', 'Welcome to this nice headline')
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet fermentum diam, sed euismod justo. Nam tincidunt dictum urna, sed vehicula ex eleifend bibendum. In viverra ex non eros blandit, at facilisis dolor laoreet.			
