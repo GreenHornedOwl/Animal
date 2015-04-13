@@ -54,11 +54,11 @@
 	padding-top: $spacing	
 	+make-sm-column(12)
 	+clearfix	
-	.product-description
-		padding-top: 4em
-		max-width: 75%
+	.product-description		
+		padding: 2em
 		margin: 0 auto
 		font-size: 0.8em
+		background-color: #eee
 		h3
 			font-size: 1.8em
 			font-weight: 300
@@ -79,3 +79,18 @@
 	.active 
 		display: block
 		visibility: visible
+table
+	background-color: #fff
+	table-layout: auto
+	td
+		line-height: 1.4
+		padding: 1em
+		vertical-align: top
+	th 
+		line-height: 40px	
+		padding: 0px 1em
+		text-align: left
+	.description-column
+		width: 50%	
+.table-striped tbody>tr:nth-child(odd)>td, .table-striped tbody>tr:nth-child(odd)>th 
+	background-color: #f7f7f7		

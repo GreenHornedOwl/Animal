@@ -10,23 +10,6 @@
 			max-width: 100px
 			float: left
 			margin-right: 0.5em	
-.solutions-4column
-	font-size: 1.2em
-	margin-bottom: 2em
-	p
-		text-align: center		
-		font-weight: 700
-	.list 
-		border: 1px solid #000
-		padding: $spacing 0
-		+clearfix
-		.list-item
-			+make-sm-column(3)
-			+make-xs-column(6)
-			margin-bottom: 1em
-			a 
-				text-align: center
-				font-weight: 700
 .column-3-cell
 	+make-sm-column(4)
 	+make-xs-column(12)
@@ -61,7 +44,9 @@
 		img 
 			margin-bottom: $spacing
 .big-carousel-image
-	margin-bottom: $spacing			
+	margin-bottom: $spacing
+
+//Content+Sidebar		
 .content-with-sidebar
 	+make-sm-column(10)
 	h2
@@ -72,6 +57,7 @@
 		padding: 0.5em
 		.media-left
 			width: 20%
+//Sidebar			
 .content-sidebar
 	+make-sm-column(2)
 	padding: 0px
@@ -88,3 +74,101 @@
 	.aside-subheading
 		font-size: 1em
 		font-weight: 600
+
+// Single Content Wrap		
+.wrap
+	+make-xs-column(12)
+	max-width: 70%
+	margin: 0 auto
+	float: none
+.full-headline
+	margin: 0px $spacing $spacing
+	text-align: center
+	font-size: 1.5em
+	border-bottom: 1px solid #000
+.content		
+	ul
+		padding-left: 17px
+		list-style-type: initial
+	img
+		margin-bottom: 1em
+
+// Table Inner
+.inner-strip 
+	padding-top: 2em
+	width: 80%
+	margin: 1em auto
+	td
+		padding: 0.5em
+	tr:nth-child(odd)>td 
+		background-color: #f7f7f7					
+	tr:nth-child(odd)>th
+		background-color: #f7f7f7	
+
+//Solutions
+.options-with-sidebar
+	@extend .content-with-sidebar
+	padding: 0px
+			
+.options-sidebar
+	@extend .content-sidebar	
+.option-content					
+	padding: $spacing
+	border: 1px solid #000
+	+clearfix
+.option-item	
+	margin-bottom: $spacing*2
+	.option-headline
+		padding: $spacing
+		border: 1px solid #000
+		margin-bottom: $spacing/2
+		+clearfix
+		img 
+			width: 85px
+			float: left
+			margin-right: 1em
+		p 
+			float: left		
+.option-pick		
+	img 
+		margin-bottom: 1em
+	a 
+		text-align: center
+		display: block
+// .option-content		
+// 	.option-pick:nth-child(odd)
+// 		padding-left: 0px
+// 		padding-right: $spacing/2
+// 	.option-pick:nth-child(even)
+// 		padding-left: $spacing/2
+// 		padding-right: 0px		
+.solutions-headline
+	text-align: center		
+	font-weight: 700
+	margin-bottom: $spacing*2	
+
+.solutions-4column
+	+make-row
+	.option-item
+		+make-sm-column(3)
+		.option-pick
+			padding: 0px
+.solutions-2column	
+	+make-row
+	.option-item
+		+make-xs-column(6)
+	.option-pick
+		+make-xs-column(6)	
+	.option-pick-full		
+		+make-xs-column(12)
+		p
+			font-weight: 400
+		img 
+			max-width: 300px
+			margin: 0 auto
+		a 
+			display: inline	
+.solutions-3column
+	+make-row
+	.option-item
+		+make-sm-column(4)			

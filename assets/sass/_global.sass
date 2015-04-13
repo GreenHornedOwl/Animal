@@ -51,4 +51,37 @@
 	text-decoration: underline
 	margin-bottom: 0.5em
 .learn-more
-	@extend .read-more		
+	@extend .read-more	
+.wrap
+	+make-xs-column(12)
+	max-width: 70%
+	margin: 0 auto
+	float: none
+.full-headline
+	margin: 0px $spacing $spacing
+	text-align: center
+	font-size: 1.5em
+	border-bottom: 1px solid #000
+.content		
+	ul
+		padding-left: 17px
+		list-style-type: initial
+	img
+		margin-bottom: 1em
+
+.inner-strip 
+	padding-top: 2em
+	width: 80%
+	margin: 1em auto
+	td
+		padding: 0.5em
+	tr:nth-child(odd)>td 
+		background-color: #f7f7f7					
+	tr:nth-child(odd)>th
+		background-color: #f7f7f7	
+		
+.options-with-sidebar
+	@extend .content-with-sidebar
+	padding: 0px
+.options-with
+	@extend .content-sidebar		
