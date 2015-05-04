@@ -18,6 +18,25 @@ $(document).ready(function(){
         }
     }
    });
+  $(".logo-carousel .owl-carousel").owlCarousel({
+    loop:true,  
+    nav:false,
+    dots: true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        768:{
+            items:2
+        },
+        992:{
+            items:5
+        },
+        1200:{
+            items:5
+        }
+    }
+   });
   $(".inner-slider .owl-carousel").owlCarousel({
     loop:true,  
     nav:false,

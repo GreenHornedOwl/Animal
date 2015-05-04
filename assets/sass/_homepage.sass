@@ -1,33 +1,93 @@
-.home-nav	
-	text-align: center
-	padding-top: 0.5em
+.home-nav		
+	+make-sm-column(3)
 	p
+		font-size: 1.1em
 		margin-bottom: 0.5em
+		color: #fff
+		font-weight: 700
 	ul
 		+v-nav
 		li 
 			margin-bottom: 0.2em
 		a 
+			background-color: $primary
+			line-height: 36px
 			display: block
-			margin-bottom: 0.5em
-			border: 1px solid #000	
-			padding: 0.2em 0em
-.home-slider
-	padding-top: 2.4em	
+			margin-bottom: 0.75em	
+			padding: 0 1.5em
+			color: #fff
+			&:hover 
+				background-color: $secondary
+				color: #000
+.home-slider-container
+	+make-sm-column(9)
+	.home-slider
+		border: 1px solid #fff
 .main-featured
 	+make-row
+	margin-top: 1em
 	margin-bottom: 2em	
+	.content-left
+		+make-sm-column(3)
+		a 
+			position: relative
+			display: block
+			span
+				position: absolute
+				text-align: center
+				margin: 0
+				background-color: rgba(0,0,0,0.5)
+				display: block
+				width: 100%
+				line-height: 3em
+				color: #fff
+				top: 20%
+				font-size: 1.3em
+				font-weight: 600
+		&:hover
+			span 
+				background-color: rgba(21,122,192,0.5)				
+	.content-right
+		+make-sm-column(9)
 	h3
-		display: block
-		text-align: center
+		display: block		
 		font-size: 2em
+		font-weight: 700
 	h4
 		margin-bottom: 0.2em	
+		font-size: 1.3em
+		font-weight: 700
+	p 
+		margin-bottom: 1em
 	.content-left
-		padding-top: 4em	
+		padding-top: 1em	
 .featured-half
 	+make-sm-column(6)
+	padding: 0px
 	margin-bottom: 1em
+	color: #fff
+	a 
+		color: #fff
+		&:hover 
+			color: $primary
+	&:first-child
+		padding-right: $spacing
+	&:last-child
+		padding-left: $spacing	
+	.media 
+		+background-image(linear-gradient(#202020, #626365))
+		padding: $spacing
 	.media-left
-		width: 30%	
-	
+		width: 43%	
+.logo-carousel
+	margin-top: 70px
+	margin-right: -$spacing
+	h5
+		font-size: 1.3em
+		font-weight: 700
+		border-bottom: 1px solid #242424
+		padding-bottom: 0.5em
+		margin-bottom: 30px
+		margin-right: $spacing
+	.item 
+		margin-right: $spacing	

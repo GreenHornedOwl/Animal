@@ -1,25 +1,26 @@
 .header
 	+clearfix
-	margin-bottom: 1em
+	// margin-bottom: 1em
+	padding-top: 2em
 	.logo
 		+make-md-column(3)
 		padding-left: 0
-	.upper	
+		img 
+			max-width: 170px
+	.middle
 		+clearfix		
-		font-size: 0.8em
-		margin-bottom: 1em
-		border-bottom: 1px solid $light-gray
-		text-align: right
-		a
-			padding: 0px 0.5em
-			margin: 0.5em 0
-			color: #000
-			&:hover
-				color: $accent		
+		font-size: 1em
+		// margin-bottom: 1em
 		ul
 			+h-nav
 			float: right
 			display: inline-block
+			a
+				padding: 0px 0.5em
+				margin: 0.5em 0
+				color: #fff
+				&:hover
+					color: $primary	
 			li:last-child
 				a
 					padding-left: 0
@@ -30,13 +31,21 @@
 				+default-input
 			input
 				+default-input
+				background-color: transparent
+				color: #fff
 				border-top: none
 				border-left: none
 				border-right: none
 				margin-top: 0.5em
+				width: 4em
+				border: 1px solid #000
+				padding-left: 0px
+				&:focus 
+					width: 10em
+					border-bottom: 1px solid $primary
 			button
 				outline: none
-				background-color: #fff
+				background-color: transparent
 				border: none
-				color: $accent
+				color: #fff
 				font-size: 1.2em

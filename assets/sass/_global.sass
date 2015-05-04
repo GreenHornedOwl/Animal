@@ -1,3 +1,7 @@
+body
+	background-image: url(../img/background.png)
+	background-repeat: repeat-x
+	background-size: 100% 100%
 .container
 	+container-fixed
 	@media (min-width: $screen-sm-min)
@@ -30,12 +34,14 @@
 			color: #000
 			line-height: 2.2em
 			text-transform: uppercase
+			color: #fff
 			&:hover
 				color: $blue
 		li 		
 			font-weight: 400
-			&:after
-				content: "/"
+			&:after	
+				color: #fff
+				content: ">"
 				margin-left: 5px
 				margin-right: 5px
 				font-weight: 700
@@ -44,14 +50,19 @@
 				content: ""	
 				// color: $red
 .content-left
-	+make-sm-column(4)
+	+make-sm-column(5)
+	margin-bottom: 2em
 .content-right
-	+make-sm-column(8)
+	+make-sm-column(7)
+	margin-bottom: 2em
 .read-more
-	text-decoration: underline
+	// text-decoration: underline
 	margin-bottom: 0.5em
+	color: $primary
+	&:hover 
+		color: $secondary
 .learn-more
-	@extend .read-more	
+	@extend .read-more		
 .wrap
 	+make-xs-column(12)
 	max-width: 70%
@@ -85,3 +96,6 @@
 	padding: 0px
 .options-with
 	@extend .content-sidebar		
+
+.main-content-upper
+	color: #fff
