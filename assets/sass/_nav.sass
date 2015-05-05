@@ -10,15 +10,18 @@
 		background-color: $primary
 		li
 			text-align: center
+			&.vertical-menu
+				position: relative
 	a		
 		color: #fff
 		line-height: 40px
 		padding: 0 1.5em
 		font-weight: 400		
-		font-size: 1em		
+		font-size: 1em
 		display: block
 		// &.active 
 		// 	color: #000
+
 	.dropdown		
 		a:after
 			font-family: "FontAwesome"
@@ -28,35 +31,62 @@
 	.dropdown:hover
 		.dropdown-menu
 			display: inline-block		
+		.mega-menu
+			display: inline-block	
 	.dropdown-menu
-		display: none
 		+v-nav
-		+clearfix
-		+background-image(linear-gradient(white, #fafafa))
-		border-bottom: 2px solid $accent
-		min-height: 300px
+		+clearfix	
+		display: none
+		background-color: darken($primary, 10%)	
+		background-color: #fff
+		border-bottom: 2px solid $primary
+		width: 250%
 		position: absolute
-		top: 28px
+		top: 100%
 		left: 0
+		padding: 1em
 		.level-2			
-			a
-				+nav-level-2(transparent, $accent, transparent, $accent)
+			a				
 				text-transform: uppercase
-				font-weight: 700
+				font-weight: 600
 				font-size: 0.9em
 				padding-left: 0.8em
+				text-align: left
+				color: #107bc1
+				line-height: 2em				
+				&:hover 
+					background-color: $primary
+					color: #fff
 				&:after
 					display: none
+			ul 
+				background-color: #fff		
 		.level-3
-			a
-				+nav-level-2(transparent, #000, transparent, $accent)
+			margin-bottom: 0.5em
+			border-bottom: 1px solid ligten($primary, 70%)
+			padding-bottom: 0.5em
+			a				
+				color: #000
 				font-size: 0.8em
 				text-transform: none
-				font-weight: 400			
-				padding-left: 1em
+				font-weight: 600
+				
+		.level-4 
+			a 
+				color: #000
+				font-weight: 400		
 		.level-2-container
 			padding: 1em $grid-gutter-width/2
 			float: left		
+			width: 33.33%
 	.teaser
 		float: left
+	.mega-menu
+		padding: 0px
+		position: absolute
+		display: inline-block
+		display: none
+		top: 100%
+		left: 0
+		width: 100%	
 								

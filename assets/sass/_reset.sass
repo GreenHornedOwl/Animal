@@ -18,11 +18,11 @@ h1, h2, h3, h4, h5, h6
 	font-weight: 600
 	margin: 0 0 0.5em
 a
-	color: $accent
+	color: $primary
 	text-decoration: none
 	+transition(ease-in,0.2s)
 	&:hover
-		color: darken(adjust_hue(#FC4400, 136), 11)
+		color: darken(adjust_hue($primary, 136), 11)
 img
 	width: 100%
 	+img-responsive

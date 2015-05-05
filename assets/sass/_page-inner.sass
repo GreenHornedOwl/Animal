@@ -7,9 +7,13 @@
 	.logos
 		+clearfix
 		img
-			max-width: 100px
-			float: left
-			margin-right: 0.5em	
+			max-width: 32%
+			float: left 
+			margin-right: 1%
+			@media (min-width: $screen-sm-min)
+				max-width: 100px
+				float: left
+				margin-right: 0.5em	
 .column-3-cell
 	+make-sm-column(4)
 	+make-xs-column(12)
@@ -56,6 +60,7 @@
 //Content+Sidebar		
 .content-with-sidebar
 	+make-sm-column(10)
+	+make-xs-column(12)
 	h2
 		margin-bottom: $spacing
 	.full-cell
@@ -92,11 +97,14 @@
 	max-width: 70%
 	margin: 0 auto
 	float: none
+	h1 
+		color: #fff
 .full-headline
 	margin: 0px $spacing $spacing
 	text-align: center
 	font-size: 1.5em
-	border-bottom: 1px solid #000
+	border-bottom: 1px solid $primary
+	color: #fff
 .content		
 	ul
 		padding-left: 17px
@@ -178,16 +186,33 @@
 	font-weight: 700	
 	margin-bottom: 1em
 	font-size: 1.8em	
-.solutions-4column
-	+make-row
-	.option-item
-		+make-sm-column(3)
+.solutions-3column
+	float: left 
+	width: 75%
+	.option-item		
+		width: 100%
 		.option-pick
-			padding: 0px
-.solutions-2column	
-	+make-row
+			+make-xs-column(4)
+.solutions-1column
+	float: left	
+	width: 25%
+	.option-item		
+		+make-xs-column(12)
+.solutions-4column
+	// +make-row
 	.option-item
-		+make-xs-column(6)
+		width: 100%		
+		.option-pick
+			+make-sm-column(3)
+			margin-bottom: 1em
+			// padding: 0px
+.solutions-2column	
+	// +make-row
+	float: left
+	width: 50%
+	.option-item
+		// +make-sm-column(6)
+		+make-xs-column(12)
 	.option-pick
 		+make-xs-column(6)	
 	.option-pick-full		
@@ -206,8 +231,11 @@
 			text-decoration: none
 			&:hover 
 				color: $secondary			
-.solutions-3column
-	+make-row
-	.option-item
-		+make-sm-column(4)
+// .solutions-3column
+// 	// +make-row
+// 	float: left 
+// 	width: 33.33%
+// 	.option-item
+// 		// +make-sm-column(4)
+// 		+make-xs-column(12)
 	

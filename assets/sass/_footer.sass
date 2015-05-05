@@ -1,31 +1,45 @@
 .footer
-	border-top: 1px solid #000
-	padding-top: 0.5em
+	// border-top: 1px solid #000
+	
 	margin-top: 2em
 	color: #fff
 	font-size: 0.8em
+	background-color: #000
+	@media (min-width: $screen-sm-min)
+		background-image: url(../img/background.png)
+		background-repeat: repeat-x
+		overflow: hidden
+		background-position: left -1320px
+		padding-top: 65px
 	a 
 		color: #fff
 		&:hover 
 			color: $primary
 	.footer-upper	
 		+clearfix
-		padding: 2em 0
-		border-top: 1px solid #939598
+		padding: 2em 0	
 		border-bottom: 1px solid #939598
+		@media (min-width: $screen-sm-min)			
+			border-top: 1px solid #939598
 		ul.footer-nav
+			margin-bottom: $spacing
 			+make-sm-column(8)
-			+h-nav
+			+justify-nav
+			@media (min-width: $screen-sm-min)
+				+h-nav
+				margin: 0
 			li 
-				text-align: center
+				text-align: center			
 			a 
 				margin-right: 1em
 				line-height: 2em
 		.footer-social
 			+make-sm-column(4)	
 			ul
-				+h-nav 
-				max-width: 150px
+				+justify-nav
+				@media (min-width: $screen-sm-min)
+					+h-nav
+					max-width: 150px
 				margin: 0 auto
 				float: right
 			.fa 

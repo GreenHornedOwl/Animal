@@ -1,7 +1,10 @@
 body
-	background-image: url(../img/background.png)
-	background-repeat: repeat-x
-	background-size: 100% 100%
+	// background-image: url(../img/background.png)
+	// background-repeat: repeat-x
+	// background-size: 100% 100%	
+	background-color: #000
+	@media (min-width: $screen-sm-min)
+		background-color: #fff
 .container
 	+container-fixed
 	@media (min-width: $screen-sm-min)
@@ -41,10 +44,13 @@ body
 			font-weight: 400
 			&:after	
 				color: #fff
-				content: ">"
+				font-family: "FontAwesome"
+				content: "\f054"
 				margin-left: 5px
 				margin-right: 5px
-				font-weight: 700
+				font-weight: 400
+				font-size: 0.5em
+				vertical-align: middle
 				// color: $blue
 			&:last-child:after
 				content: ""	
@@ -55,6 +61,14 @@ body
 .content-right
 	+make-sm-column(7)
 	margin-bottom: 2em
+.content-products-left
+	+make-sm-column(3)
+	padding-top: 2em
+	margin-bottom: 2em
+.content-products-right
+	padding-top: 2em
+	+make-sm-column(9)
+	margin-bottom: 2em	
 .read-more
 	// text-decoration: underline
 	margin-bottom: 0.5em
@@ -99,3 +113,70 @@ body
 
 .main-content-upper
 	color: #fff
+.top-main
+	background-color: #000
+	margin-bottom: 20px
+	@media (min-width: $screen-sm-min)
+		background-color: #fff
+		background-image: none
+		background-image: url(../img/background2.png)
+		background-repeat: repeat-x
+		background-position: left -130px
+		min-height: 555px
+.top-main-short
+	+background-image(linear-gradient(#000000, #ffffff))
+	background-position: 0 0
+	background-repeat: no-repeat
+	min-height: 1px
+.owl-nav
+	position: absolute
+	top: 50%
+	left: 0
+	right: 0
+	color: #fff
+	margin-top: -7px
+	height: 0px	
+	z-index: 99
+	.owl-prev
+		float: left
+		padding-left: 10px
+	.owl-next
+		float: right
+		padding-right: 10px
+.product-list
+	.media
+		padding: 1em
+		border: 1px solid #000		
+.filter-wrapper
+	margin-bottom: 1em		
+#clearFilters	
+	width: 100%
+	display: block 
+	background-color: #eee
+	color: #000
+	text-align: center
+	line-height: 2em
+	cursor: pointer 
+	margin-bottom: 0.5em
+#applyFilters
+	background-color: $primary
+	display: block	
+	outline: none
+	width: 100%
+	text-align: center 
+	line-height: 2em
+	border: none
+	color: #fff
+.filter-vertical 
+	h3 
+		font-size: 0.8em
+		font-weight: 700	
+.help
+	position: absolute
+	top: 300px
+	margin-top: -103px
+	right: 0px
+	z-index: 3
+	display: none
+	@media (min-width: $screen-sm-min)
+		display: block
