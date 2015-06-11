@@ -76,8 +76,10 @@ body
 	float: none
 .full-headline
 	margin: 0px $spacing $spacing
+	margin: $spacing
 	text-align: center
 	font-size: 1.5em
+	line-height: 2em
 	border-bottom: 1px solid #000
 .content		
 	ul
@@ -104,23 +106,24 @@ body
 	@extend .content-sidebar		
 
 .main-content-upper
-	color: #fff
+	// color: #fff
+	h1 
+		color: #000
 .top-main
 	background-color: #000
 	margin-bottom: 20px
-	@media (min-width: $screen-sm-min)
-		background-color: #fff
-		background-image: none
-		background-image: url(../img/background2.png)
-		background-repeat: repeat-x
-		background-position: left -130px
+	@media (min-width: $screen-sm-min)		
+		
 		min-height: 555px
 		+background-image(linear-gradient(#000000, #ffffff))
 		background-position: left top
 .top-main-short
-	+background-image(linear-gradient(#000000, #ffffff))
-	background-position: 0 0
-	background-repeat: no-repeat
+	// +background-image(linear-gradient(#000000, #ffffff))
+	background-color: #fff
+	background-image: none
+	background-image: url(../img/background3.png)
+	background-repeat: repeat-x
+	background-position: left -3px
 	min-height: 1px
 .owl-nav
 	position: absolute
@@ -241,3 +244,7 @@ body
 	text-align: right
 	color: #fff
 	padding: 6px		
+.min-container 
+	min-height: 1080px
+.wrap-fix
+	padding: 0 $spacing		

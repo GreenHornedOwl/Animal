@@ -48,6 +48,8 @@
 .product-tab-header
 	+make-sm-column(12)
 	// margin-top: $spacing*2
+	margin-top: $spacing/2
+	margin-bottom: $spacing/2
 	ul
 		+h-nav
 		// border-bottom: 1px solid #000
@@ -61,6 +63,7 @@
 			border: 1px solid $primary
 			padding: 0.5em 1em
 			margin-right: 0.2em
+			background-color: #fff
 			// &:after
 			// 	content: "|"
 			// 	margin-left: 5px
@@ -74,7 +77,7 @@
 				background-color: $primary
 				color: #fff	
 .tab-content
-	padding-top: $spacing/2
+	// padding-top: $spacing/2
 	+make-sm-column(12)
 	+clearfix	
 	a 
@@ -150,10 +153,31 @@ table
 			margin-right: 10px
 
 .inner-slider 
-	border: 1px solid #fff
+	border: 1px solid $primary
 	.owl-prev
 		padding: 2em 2em 2em 0.5em
 		margin-top: -1.5em
 	.owl-next
 		padding: 2em 0.5em 2em 2em	
 		margin-top: -1.5em
+.alphabet  
+	margin-left: 0
+	margin-top: 0px 
+.letter  
+	margin-right: 5px
+	font-size: 18px 
+	width: 25px
+	display: inline-block
+	background-color: #107BC1
+	color: #fff
+	text-align: center 
+	&:hover 
+		background-color: #000
+	a 
+		color: #fff
+.center-and-wrap
+	width: 100%
+	text-align: center
+.back-to-top
+	margin-bottom: 100px
+	font-size: 18px
