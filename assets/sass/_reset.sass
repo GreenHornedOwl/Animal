@@ -33,3 +33,43 @@ ul
 input
 	outline: none	
 	+transition(all 0.2s ease-in)
+.blueimp-gallery
+	background-color: rgba(0,0,0,0.9)
+	.prev
+		color: $primary
+		font-size: 5em
+	.next 
+		color: $primary
+		font-size: 5em
+	.close
+		color: $primary
+		font-size: 5em			
+	.slides	
+		padding: 10em 0
+.modal-backdrop
+	z-index: -1
+	&.in 
+		opacity: 0.9
+#video-links
+	+make-row		
+.videoThumb
+	&:hover 
+		cursor: pointer
+	.modal-dialog
+		width: 650px	
+	.modal-header 
+		.close				
+			float: right
+			background-image: none
+			background-color: transparent
+			border: none
+			outline: none
+			color: $primary
+			font-size: 2em
+			line-height: 1
+			padding: 0px
+			margin: 0px
+			margin-top: -5px
+.radio, .checkbox
+	padding-left: 20px
+	font-weight: 400
