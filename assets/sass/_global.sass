@@ -175,6 +175,8 @@ body
 	right: 0px
 	z-index: 3
 	display: none
+	a 
+		color: $yellow
 	@media (min-width: $screen-sm-min)
 		display: block
 .black
@@ -253,9 +255,15 @@ body
 #links
 	+clearfix	
 	.thumbnail-image
-		+make-sm-column(2)
+		+make-sm-column(4)
 		padding: 0px 10px
 		margin-bottom: 20px
+		.media-left
+			width: 50%
+		.media-body 
+			p 
+				font-weight: 600
+				color: #000	
 .video-item
 	+make-sm-column(4)
 	margin-top: 0px

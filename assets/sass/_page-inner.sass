@@ -4,6 +4,11 @@
 		margin-bottom: 0.2em
 	.description
 		display: none	
+		ul 
+			list-style-type: disc
+			padding-left: 1.5em
+	.read-more
+		margin-top: 1em	
 	.logos
 		+clearfix
 		img
@@ -170,6 +175,10 @@
 .option-pick		
 	img 
 		margin-bottom: 1em
+		margin-bottom: 1em
+		height: 90px
+		width: auto
+		margin: 0 auto
 	a 
 		text-align: center
 		display: block
@@ -213,6 +222,8 @@
 	// +make-row
 	float: left
 	width: 50%
+	.media-left
+		width: 20%
 	.option-item
 		// +make-sm-column(6)
 		+make-xs-column(12)
@@ -318,4 +329,4 @@ colgroup
 		border: none
 .static-text
 	h4 
-		text-transform: uppercase								
+		text-transform: uppercase							
