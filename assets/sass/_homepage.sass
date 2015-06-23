@@ -23,8 +23,18 @@
 				color: #000
 .home-slider-container
 	+make-sm-column(9)
+	border:none
+	// padding-right: $spacing
+	padding-left: 0px
+	box-sizing: border-box
+	width: 100%
+	background: #fff
+	overflow: hidden
+	background-color: transparent
 	.home-slider
 		border: 1px solid #fff
+		height: 441px
+		overflow: hidden
 		a 
 			// border: 1px solid #fff
 			display: block
@@ -34,6 +44,10 @@
 		.owl-next
 			padding: 2em 0.5em 2em 2em	
 			margin-top: -1.5em	
+		img 
+			// max-width: 835px 	
+
+
 .main-featured
 	+make-row
 	margin-top: 1em
