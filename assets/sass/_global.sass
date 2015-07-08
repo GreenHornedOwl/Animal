@@ -170,13 +170,28 @@ body
 		font-weight: 700	
 .help
 	position: fixed
-	top: 300px
-	margin-top: -103px
+	top: 197px
+	// margin-top: -103px
 	right: 0px
 	z-index: 3
 	display: none
+	width: 450px 
+	margin-left: -390px
+	left: 0px
+	cursor: pointer
+	.help-trigger
+		float: right
 	a 
-		color: $yellow
+		color: $secondary
+		@extend .button-primary		
+		color: #fff
+	.help-container
+		background-color: #000
+		color: #fff
+		padding: 40px 20px 20px 20px
+		float: left
+		width: 384px
+		height: 207px	
 	@media (min-width: $screen-sm-min)
 		display: block
 .black
