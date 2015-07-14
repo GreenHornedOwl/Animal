@@ -85,6 +85,10 @@
 		color: $primary
 		&:hover 
 			text-decoration: underline
+		&.file
+			color: #000	
+			&:hover 
+				color: $primary
 	.product-description		
 		padding: 2em
 		margin: 0 auto
@@ -93,6 +97,7 @@
 		h3
 			font-size: 1.8em
 			font-weight: 700
+			margin-left: -$spacing
 		p 
 			font-size: initial	
 		.inline-element
@@ -121,6 +126,10 @@
 		display: none
 		visibility: hidden
 		border-left: 4px solid $primary
+		margin-bottom: $spacing
+		table
+			margin-bottom: $spacing
+			width: 100%
 	.active 
 		display: block
 		visibility: visible
