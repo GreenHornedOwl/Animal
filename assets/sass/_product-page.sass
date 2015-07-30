@@ -90,14 +90,14 @@
 			&:hover 
 				color: $primary
 	.product-description		
-		padding: 2em
+		padding: 2em 0 1em
 		margin: 0 auto
 		// font-size: 0.8em
 		background-color: #e7e8e9
 		h3
 			font-size: 1.8em
 			font-weight: 700
-			margin-left: -$spacing
+			// margin-left: -$spacing
 		p 
 			font-size: initial	
 		.inline-element
@@ -118,7 +118,8 @@
 		color: #fff
 		right: 20px
 		top: 20px
-		color: #fff	
+		color: #fff
+		z-index: 3	
 		&:hover 
 			background-color: $secondary
 	.tab-pane 
@@ -127,6 +128,7 @@
 		visibility: hidden
 		border-left: 4px solid $primary
 		margin-bottom: $spacing
+		+clearfix
 		table
 			margin-bottom: $spacing
 			width: 100%
@@ -228,3 +230,5 @@ table
 table
 	border-collapse: collapse
 	border: 1px solid #eee
+#features, #specifications, #video, #images
+	padding: 2em 1em 1em
