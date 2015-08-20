@@ -71,11 +71,13 @@ body
 	padding-top: 2em
 	+make-sm-column(9)
 	margin-bottom: 2em	
-.wrap
-	+make-xs-column(12)
-	max-width: 70%
-	margin: 0 auto
-	float: none
+// .wrap
+// 	+make-xs-column(12)	
+// 	margin: 0 auto
+// 	float: none
+// 	max-width: 100%
+	// @media (min-width: $screen-md-min)
+	// 	max-width: 70%
 .full-headline
 	margin: 0px $spacing $spacing
 	margin: $spacing
@@ -92,8 +94,10 @@ body
 
 .inner-strip 
 	padding-top: 2em
-	width: 80%
+	width: 100%
 	margin: 1em auto
+	@media (min-width: $screen-md-min)
+		width: 80%
 	td
 		padding: 0.5em
 	tr:nth-child(odd)>td 
@@ -326,3 +330,6 @@ body
 	ul 
 		list-style-type: disc
 		padding-left: 1.5em	
+.post-desc 
+	img 
+		margin: 0.5em 0.5em 0.5em 0

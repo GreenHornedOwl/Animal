@@ -103,9 +103,11 @@
 // Single Content Wrap		
 .wrap
 	+make-xs-column(12)
-	max-width: 70%
+	max-width: 100%
 	margin: 0 auto
 	float: none
+	@media (min-width: $screen-md-min)
+		max-width: 70%
 	h1 
 		color: #fff
 .full-headline
@@ -124,8 +126,10 @@
 // Table Inner
 .inner-strip 
 	padding-top: 2em
-	width: 80%
+	width: 100%
 	margin: 1em auto
+	@media (min-width: $screen-md-min)
+		width: 80%
 	td
 		padding: 0.5em
 	tr:nth-child(odd)>td 
@@ -216,10 +220,13 @@
 .solutions-4column
 	// +make-row
 	.option-item
-		width: 100%		
+		width: 100%	
+		padding-left: 20px
+		padding-right: 20px	
 		.option-pick
 			+make-sm-column(3)
 			margin-bottom: 1em
+			padding: 0
 			// padding: 0px
 .solutions-2column	
 	// +make-row
