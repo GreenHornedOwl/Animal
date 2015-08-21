@@ -1,8 +1,8 @@
-.home-nav		
+.home-nav   
 	+make-lg-column(3)
 	@media (max-width: $screen-lg-min - 1)
 		width: 30%
-	@media (max-width: $screen-md-min - 1)	
+	@media (max-width: $screen-md-min - 1)  
 		width: 100%
 	p
 		font-size: 1.1em
@@ -18,7 +18,7 @@
 			background-color: $primary
 			line-height: 36px
 			display: block
-			margin-bottom: 0.45em	
+			margin-bottom: 0.45em 
 			padding: 0 1.5em
 			color: #fff
 			font-size: 0.9em
@@ -30,20 +30,20 @@
 	margin-bottom: 0
 	@media (max-width: $screen-lg-min - 1)
 		width: 70%
-	@media (max-width: $screen-md-min - 1)	
-		width: 100%	
+	@media (max-width: $screen-md-min - 1)  
+		width: 100% 
 	@media (min-width: $screen-md-min)
-		padding-left: 0px		
+		padding-left: 0px   
 		margin-bottom: 2em
 	border:none
-	// padding-right: $spacing	
+	// padding-right: $spacing  
 	box-sizing: border-box
 	width: 100%
 	background: #fff
 	overflow: hidden
 	background-color: transparent
-	.home-slider		
-		border: 1px solid #fff		
+	.home-slider    
+		border: 1px solid #fff    
 		overflow: hidden
 		@media (min-width: $screen-md-min)
 			height: 441px
@@ -52,22 +52,22 @@
 			// border: 1px solid #fff
 			display: block
 			position: relative
-		.flex-direction-nav	
+		.flex-direction-nav 
 			a 
 				top: 225px
 		.owl-prev
 			padding: 2em 2em 2em 0.5em
 			margin-top: -1.5em
 		.owl-next
-			padding: 2em 0.5em 2em 2em	
-			margin-top: -1.5em	
+			padding: 2em 0.5em 2em 2em  
+			margin-top: -1.5em  
 		img 
 			// max-width: 835px 
 .main-featured
 	+make-row
 	margin-top: 1em
 	@media (min-width: $screen-md-min)
-		margin-bottom: 2em	
+		margin-bottom: 2em  
 	.content-left
 		+make-sm-column(3)
 		@media (max-width: $screen-md-min - 1)
@@ -89,23 +89,23 @@
 				font-weight: 600
 		&:hover
 			span 
-				background-color: rgba(21,122,192,0.5)				
+				background-color: rgba(21,122,192,0.5)        
 	.content-right
 		+make-sm-column(9)
 		@media (max-width: $screen-md-min - 1)
 			padding: 0px
 	h3
-		display: block		
+		display: block    
 		font-size: 2em
 		font-weight: 700
 	h4
-		margin-bottom: 0.2em	
+		margin-bottom: 0.2em  
 		font-size: 1.3em
 		font-weight: 700
 	p 
 		margin-bottom: 1em
 	.content-left
-		padding-top: 1em	
+		padding-top: 1em  
 .featured-half
 	+make-sm-column(6)
 	padding: 0px
@@ -118,12 +118,12 @@
 	&:last-child
 		padding-left: 0px
 		@media (min-width: $screen-sm-min)
-			padding-left: $spacing	
+			padding-left: $spacing  
 	.media 
 		+background-image(linear-gradient(#202020, #626365))
 		padding: $spacing
 	.media-left
-		width: 43%	
+		width: 43%  
 .logo-carousel
 	margin-top: 70px
 	margin-right: -$spacing
@@ -135,7 +135,7 @@
 		margin-bottom: 30px
 		margin-right: $spacing
 	.item 
-		margin-right: $spacing	
+		margin-right: $spacing  
 .caption-container
 	// display: none
 	position: absolute
@@ -160,12 +160,12 @@
 		top: auto
 		left: $spacing
 		right: auto
-		bottom: $spacing	
+		bottom: $spacing  
 	&.bottomRight
 		top: auto
 		left: auto
 		right: $spacing
-		bottom: $spacing			
+		bottom: $spacing      
 	.caption-headline
 		font-size: 2em
 		line-height: 1
@@ -181,5 +181,21 @@
 		right: $spacing
 		top: $spacing
 		width: 3em
-			
-
+#videoModal
+	#videoModalDialog
+		max-width: 100%
+		margin: 0
+		@media (max-width: 992px)
+			margin-top: 5em
+	.video-container 
+		position: relative
+		padding-bottom: 56.25%
+		padding-top: 30px
+		height: 0
+		overflow: hidden
+	.video-container iframe, .video-container object, .video-container embed
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%

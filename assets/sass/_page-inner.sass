@@ -1,5 +1,7 @@
 .main-content-upper
 	margin-bottom: 2em
+	@media (max-width: 991px)
+		margin-bottom: 1em
 	h1
 		margin-bottom: 0.2em
 	ul 
@@ -37,6 +39,8 @@
 		background-color: #000
 		color: #fff
 		padding: 1em
+		@media (max-width: 767px)
+			min-height: 1em
 	h3
 		font-size: 1em
 		margin-bottom: 0	
@@ -88,6 +92,8 @@
 	margin-bottom: $spacing*2
 	img 
 		margin-bottom: $spacing
+		@media (max-width: 991px)
+			max-width: 50%
 	.aside-title
 		min-height: 2em
 		font-weight: 600
@@ -96,6 +102,8 @@
 		color: #fff
 		padding: 20px
 		height: 5em
+		@media (max-width: 991px)
+			height: auto
 	.aside-subheading
 		font-size: 1em
 		font-weight: 600
@@ -141,10 +149,17 @@
 .options-with-sidebar
 	@extend .content-with-sidebar
 	padding: 0px
-	
+	@media (max-width: 991px)
+		width: 100%
 .options-sidebar
 	@extend .content-sidebar
 	padding-top: 4.3em	
+	@media (max-width: 992px)
+		padding-top: 0
+		width: 100%
+		float: left
+		.aside-cell 
+			width: 100%
 .option-content			
 	background-color: #fff		
 	padding: $spacing
@@ -208,13 +223,19 @@
 .solutions-3column
 	float: left 
 	width: 75%
+	@media (max-width: 991px)
+		width: 100%
 	.option-item		
 		width: 100%
+		@media (max-width: 991px)
+			padding: 0px 20px
 		.option-pick
 			+make-xs-column(4)
 .solutions-1column
 	float: left	
 	width: 25%
+	@media (max-width: 767px)
+		width: 50%
 	.option-item		
 		+make-xs-column(12)
 .solutions-4column
@@ -223,7 +244,10 @@
 		width: 100%	
 		padding-left: 20px
 		padding-right: 20px	
+		// @media (max-width: 767px)
+		// 	padding: 0px
 		.option-pick
+			+make-xs-column(6)
 			+make-sm-column(3)
 			margin-bottom: 1em
 			padding: 0
@@ -232,6 +256,8 @@
 	// +make-row
 	float: left
 	width: 50%
+	@media (max-width: 767px)
+		width: 100%
 	.media-left
 		width: 20%
 	.option-item
@@ -292,6 +318,8 @@ colgroup
 .pdf-table
 	table-layout: fixed		
 	margin-bottom: 1em
+	@media (max-width: 1199px)
+		width: 1130px
 	td 
 		padding: 0.5em 1em
 .locations-filter		
@@ -340,6 +368,8 @@ colgroup
 .static-text
 	h4 
 		text-transform: uppercase							
+	@media (max-width: 991px)
+		padding: 0	
 .news-item
 	margin-bottom: 1em
 .aside-group
@@ -351,3 +381,19 @@ colgroup
 	ul 
 		list-style-type: disc
 		padding-left: 1.5em
+.mobile-only-products
+	.full-headline
+		margin: 0 0 $spacing
+	.wrap
+		padding: 0
+	.solutions-4column
+		.option-item				
+			padding: 0
+			.option-headline 
+				p 
+					margin-bottom: 0
+	.media-left 
+		width: 50%
+.history-item
+	@media (max-width: 991px)
+		padding: 0 1em		

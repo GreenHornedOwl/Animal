@@ -2,7 +2,9 @@ table.pdf-table
 	color: #000
 	font-size: 0.9em
 	border: 1px solid #ccc
-
+	@media (max-width: 1200px)
+		table-layout: fixed 
+		width: 1130px
 table.table-stripped tr:nth-child(even)
 	background-color: #eee
 
@@ -126,7 +128,7 @@ table tr
 	border: none
 
 .why-stewart-image
-	width: 490px
+	max-width: 490px
 	margin-bottom: 20px
 
 .hidden-video-holder

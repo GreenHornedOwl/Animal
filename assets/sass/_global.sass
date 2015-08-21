@@ -200,11 +200,14 @@ body
 		height: 207px	
 	@media (min-width: $screen-sm-min)
 		display: block
+.solutions-2column.special-column
+	@media (min-width: 768px) and (max-width: 991px)
+		width: 100%
 .black
 	background-color: #000
 	color: #fff
 	text-align: center
-	padding-bottom: 5px
+	padding: 0.5em
 	img
 		border: 1px solid #666
 	.section-title
@@ -213,7 +216,11 @@ body
 		font-size: 1.2em
 		color: #fff
 		padding-top: 10px
-		// padding:20px; 
+		// padding:20px 
+	ul 
+		list-style-type: none	
+#mainContent .black ul 
+	list-style-type: none		
 .white-center
 	background-color: #fff
 	text-align: center
@@ -287,7 +294,8 @@ body
 				font-weight: 600
 				color: #000	
 .video-item
-	+make-sm-column(4)
+	+make-sm-column(6)
+	+make-md-column(4)	
 	margin-top: 0px
 	margin-bottom: $spacing/2
 	.media-left
