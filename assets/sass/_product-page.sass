@@ -124,6 +124,11 @@
 				float: right
 
 .tab-content
+	.table-overflow
+		@media (max-width: 767px)			
+			margin: 0 $spacing
+			overflow-x: scroll 
+			padding-left: 0px
 	.quick-reference
 		background-color: #107bc1
 		padding: 1em
@@ -150,6 +155,10 @@
 		table
 			margin-bottom: $spacing
 			width: 100%
+			@media (max-width: 767px)			
+				table-layout: fixed		
+				margin-bottom: 1em			
+				width: 1130px
 	.active 
 		display: block
 		visibility: visible
